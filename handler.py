@@ -201,7 +201,7 @@ def handler(event):
 
             # Build a tiny stub video so we can reuse the video CLI
             vid_path = td / "stub.mp4"
-            _image_to_stub_video(img_path, vid_path, fps=8, frames=max(5, batch_size))
+            _image_to_stub_video(img_path, vid_path, fps=1, frames=1, batch_size=1)
 
             out_png = _run_seedvr(vid_path, model_key, short_edge, batch_size, preserve_vram)
 

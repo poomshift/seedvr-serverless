@@ -5,6 +5,11 @@ ENV DEBIAN_FRONTEND=noninteractive \
     PIP_NO_CACHE_DIR=1 \
     PYTHONUNBUFFERED=1 \
     FORCE_CUDA=1
+    MODEL_DIR=/runpod-volume/SEEDVR2 \
+    HF_HOME=/runpod-volume/hf \
+    TRANSFORMERS_CACHE=/runpod-volume/hf \
+    XDG_CACHE_HOME=/runpod-volume/.cache \
+    TORCH_HOME=/runpod-volume/torch
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3.10 python3.10-venv python3-pip git ffmpeg \
