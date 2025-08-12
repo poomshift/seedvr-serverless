@@ -4,7 +4,7 @@ FROM nvidia/cuda:12.8.0-base-ubuntu22.04 AS builder
 ENV DEBIAN_FRONTEND=noninteractive \
     PIP_NO_CACHE_DIR=1 \
     PYTHONUNBUFFERED=1 \
-    FORCE_CUDA=1
+    FORCE_CUDA=1 \
     MODEL_DIR=/runpod-volume/SEEDVR2 \
     HF_HOME=/runpod-volume/hf \
     TRANSFORMERS_CACHE=/runpod-volume/hf \
