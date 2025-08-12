@@ -1,0 +1,4 @@
+runpod==1.6.0
+numpy
+requests
+# Comfy CLI repo installs its own requirements at runtime via handler
